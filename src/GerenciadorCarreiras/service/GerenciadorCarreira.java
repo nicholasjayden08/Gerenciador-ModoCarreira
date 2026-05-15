@@ -38,6 +38,32 @@ public class GerenciadorCarreira {
         return true;
     }
 
+    public boolean venderJogador(String nomeJogador) {
+        if (!clubeExiste()) {
+            System.out.println("Adicione um clube primeiro!");
+            return false;
+        }
+
+        Jogador jogadorEncontrado = null;
+
+        for (Jogador jogador : clube.getElenco()) {
+            if (jogador.getNome().equalsIgnoreCase(nomeJogador)) {
+                jogadorEncontrado = jogador;
+                break;
+            }
+        }
+        if (jogadorEncontrado == null) {
+            System.out.println("Jogador não encontrado no elenco!");
+            return false;
+        }
+
+        clube.getElenco().remove(jogadorEncontrado);
+        clube.setOrcamento(clube.getOrcamento() + jogadorEncontrado.getValor());
+
+        System.out.println("Jogador Vendido: " + jogadorEncontrado.getNome());
+        return true;
+    }
+
     public void listarElenco() {
         if (!clubeExiste()) {
             System.out.println("Adicione um clube primeiro!");

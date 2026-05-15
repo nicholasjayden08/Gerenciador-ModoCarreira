@@ -70,10 +70,17 @@ public class Main {
                     break;
 
                 case 3:
-                    gerenciador.listarElenco();
+                    System.out.println("Nome do jogador para realizar a venda: ");
+                    String nomeVenda = scanner.nextLine();
+
+                    gerenciador.venderJogador(nomeVenda);
                     break;
 
                 case 4:
+                    gerenciador.listarElenco();
+                    break;
+
+                case 5:
                     if (gerenciador.clubeExiste()) {
                         System.out.println("Clube: " + gerenciador.getClube().getNome());
                         System.out.println("Orçamento: " + gerenciador.getClube().getOrcamento());
