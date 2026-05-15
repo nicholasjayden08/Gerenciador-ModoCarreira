@@ -1,4 +1,4 @@
-package GerenciadorCarreiras;
+package GerenciadorCarreiras.model;
 
 public class Jogador {
     private String nome;

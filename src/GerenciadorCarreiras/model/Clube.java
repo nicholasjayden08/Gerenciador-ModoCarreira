@@ -1,4 +1,4 @@
-package GerenciadorCarreiras;
+package GerenciadorCarreiras.model;
 
 import java.util.ArrayList;
 

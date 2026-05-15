@@ -1,4 +1,7 @@
-package GerenciadorCarreiras;
+package GerenciadorCarreiras.service;
+
+import GerenciadorCarreiras.model.Clube;
+import GerenciadorCarreiras.model.Jogador;
 
 public class GerenciadorCarreira {
     private Clube clube;

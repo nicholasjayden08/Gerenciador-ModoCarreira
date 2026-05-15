@@ -1,4 +1,7 @@
-package GerenciadorCarreiras;
+package GerenciadorCarreiras.main;
+
+import GerenciadorCarreiras.service.GerenciadorCarreira;
+import GerenciadorCarreiras.model.Jogador;
 
 import java.util.Scanner;
 
